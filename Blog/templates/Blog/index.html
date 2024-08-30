@@ -1,0 +1,20 @@
+{% extends 'Blog/base.html' %}
+{%block title%} Blog {%endblock%}
+
+{% block main %}
+{% load static %}
+
+<main class="bg-white">
+<div class=" container mx-100 px-6 py-12 flex items-center justify-center m-0 min-h-screen">
+    <section class="mb-8">
+        <h1 class="text-3xl font-bold mb-4">Bem-vindo ao Blog da Raquel!</h1>
+        <p class="text-lg text-gray-700">
+            Conheça mais sobre mim, minha vida profissional e minhas aspirações.
+        </p>
+    </section>
+    <section class="mb-8 p-16">
+        <img src="{%static 'img/perfil.jpeg'%}" alt="meu perfil"  class="w-64 h-64 rounded-full object-cover">
+    </section>
+</div>
+</main>
+{%endblock%}
